@@ -10,13 +10,14 @@ namespace IOTextfiles
 			Stable _Stable = new Stable ();
 			IOSettings _io = new IOSettings(_Stable);
 
-			Console.WriteLine (_Stable.stable[0]);
-			if (_io.save ()) {
-				Console.WriteLine ("Таблицата е запаметена успешно");
+		
+			if ( _io.open()){
+				//_io.save ()) {
+				Console.WriteLine ("Таблицата е прочетено успешно");
 			} else {
-				Console.WriteLine ("Таблицата НЕ е запаметена успешно");
+				Console.WriteLine ("Таблицата НЕ е прочетена успешно");
 			}
-
+			Console.WriteLine (_Stable.stable [2]);
 		}
 	}
 }
