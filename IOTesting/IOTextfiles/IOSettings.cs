@@ -14,6 +14,12 @@ namespace IOTextfiles
 		public string getPath ()
 		{
 			string _path = System.IO.Path.Combine (AppDomain.CurrentDomain.BaseDirectory, "test.txt");
+
+			//други видове директории
+
+			string _user = Environment.GetFolderPath (Environment.SpecialFolder.LocalApplicationData); Console.WriteLine ( _user);
+			string _desktop = Environment.GetFolderPath (Environment.SpecialFolder.Desktop);            Console.WriteLine ( _desktop);
+
 			return _path;
 		}
 		public bool save()
@@ -40,6 +46,7 @@ namespace IOTextfiles
 			try{
 				
 				string _temp = System.IO.File.ReadAllText (getPath());
+
 				string[] _table = _temp.Replace ("\r", "").Split ('\n');
 
 				for ( int i = 0; i < _table.Length; i++)
