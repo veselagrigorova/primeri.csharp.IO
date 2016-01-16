@@ -1,4 +1,4 @@
-﻿<Properties StartupItem="IOTextfiles\IOTextfiles.csproj">
+﻿<Properties StartupItem="IOXMLfiles\IOXMLfiles.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
   <MonoDevelop.Ide.Workbench ActiveDocument="IOTextfiles\Program.cs">
     <Files>
